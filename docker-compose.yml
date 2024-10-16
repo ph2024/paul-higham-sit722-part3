@@ -4,7 +4,7 @@ version: '3'
 services:
 
   book_catalog:
-    image: book-catalog
+    image: book-catalog:latest
     build: 
       context: ./book-catalog
       dockerfile: Dockerfile
@@ -12,11 +12,10 @@ services:
     ports:
      - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql://db_800545486_sit722_part3_9x4b_user:Y66jjS5otsFclJlcaRvu0poqkOzdg4kK@dpg-cs7g74aj1k6c73fg6gdg-a.oregon-postgres.render.com/db_800545486_sit722_part3_9x4b
-    restart: "no"
+    - DATABASE_URL=postgresql://db_800545486_sit22_task7_2p_user:pGGLMUOa1TJO0dta335E7Nth8mS0ZDaV@dpg-cs7ju8dumphs73a7jn7g-a.oregon-postgres.render.com/db_800545486_sit22_task7_2p    
 
   inventory_management:
-    image: inventory-management
+    image: inventory-management:latest
     build: 
       context: ./inventory-management
       dockerfile: Dockerfile
@@ -24,5 +23,5 @@ services:
     ports:
      - "9000:9000" 
     environment:
-      - DATABASE_URL=postgresql://db_800545486_sit722_part3_9x4b_user:Y66jjS5otsFclJlcaRvu0poqkOzdg4kK@dpg-cs7g74aj1k6c73fg6gdg-a.oregon-postgres.render.com/db_800545486_sit722_part3_9x4b
+     - DATABASE_URL=postgresql://db_800545486_sit22_task7_2p_user:pGGLMUOa1TJO0dta335E7Nth8mS0ZDaV@dpg-cs7ju8dumphs73a7jn7g-a.oregon-postgres.render.com/db_800545486_sit22_task7_2p
     restart: "no"
