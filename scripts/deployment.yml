@@ -22,7 +22,7 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: DATABASE_URL
-          value: "postgresql://db_800545486_sit722_part3_user:cXH44MabbTExKsXuSrgPjedKNJsTekPk@dpg-cs75m7q3esus73cgpqrg-a.oregon-postgres.render.com/db_800545486_sit722_part3"
+          value: "postgresql://db_800545486_sit722_part3_9x4b_user:Y66jjS5otsFclJlcaRvu0poqkOzdg4kK@dpg-cs7g74aj1k6c73fg6gdg-a.oregon-postgres.render.com/db_800545486_sit722_part3_9x4b"
 
 
 apiVersion: apps/v1
@@ -47,7 +47,7 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: DATABASE_URL
-          value: "postgresql://db_800545486_sit722_part3_user:cXH44MabbTExKsXuSrgPjedKNJsTekPk@dpg-cs75m7q3esus73cgpqrg-a.oregon-postgres.render.com/db_800545486_sit722_part3"
+          value: "postgresql://db_800545486_sit722_part3_9x4b_user:Y66jjS5otsFclJlcaRvu0poqkOzdg4kK@dpg-cs7g74aj1k6c73fg6gdg-a.oregon-postgres.render.com/db_800545486_sit722_part3_9x4b"
 
 
 ---
